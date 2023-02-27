@@ -18,7 +18,7 @@ namespace Expense_Tracer.Controllers
             _context = context;
         }
 
-        // GET: Categori
+        // GET: Categori // niefortunny błąd
         public async Task<IActionResult> Index()
         {
               return View(await _context.Category.ToListAsync());
